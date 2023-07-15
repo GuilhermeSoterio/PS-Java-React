@@ -4,6 +4,7 @@ package br.com.banco.http.controller.impl;
 import br.com.banco.http.controller.ITransferenciaController;
 import br.com.banco.http.dto.TransferenciaDTO;
 import br.com.banco.http.dto.TransferenciaFilterDTO;
+import br.com.banco.http.dto.TransferenciasComSaldoDTO;
 import br.com.banco.service.TransferenciaService;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -19,7 +20,7 @@ public class TransferenciaController implements ITransferenciaController {
     private final TransferenciaService transferenciaService;
 
     @Override
-    public Page<TransferenciaDTO> listAll(TransferenciaFilterDTO filter, Pageable page) {
+    public TransferenciasComSaldoDTO listAll(TransferenciaFilterDTO filter, Pageable page) {
         return transferenciaService.findAll(filter, page);
     }
 }

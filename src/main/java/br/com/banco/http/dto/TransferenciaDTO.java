@@ -35,8 +35,5 @@ public class TransferenciaDTO {
         contaId = entity.getContaId();
         dataTransferencia = entity.getDataTransferencia();
         nomeOperadorTransacao = entity.getNomeOperadorTransacao();
-//        setVictimAge(entity.getVictim().getAge());
-//        setVictimGenre(entity.getVictim().getGenre());
-//        setCrimeTypeName(entity.getCrime().getTypeCrime());
     }
 }
